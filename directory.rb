@@ -12,12 +12,26 @@ students = [
 "Norman Bates"
 ]
 
+def print_header
 puts "The students of Villain Academy"
 puts "----------------------"
-
-students.each do |student|
-    puts student
 end
+
+def print names
+
+
+names.each do |name|
+    puts name
+end
+end
+
+def print_footer(names)
+    puts "Overall, we have #{names.count} great students"
+end
+
+print_header
+print(students)
+print_footer(students)
 # the value of the first student will be assigned to student
 # then it will execute the block and puts the name of the studen 
 # on the screen. then ruby will perform a second iteration
