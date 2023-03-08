@@ -47,7 +47,7 @@ def print_footer(students)
     puts "Overall, we have #{students.count} great students."
 end
 
-students = input_students
+# students = input_students
 print_header
 print(students)
 print_footer(students)
