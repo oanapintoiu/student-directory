@@ -37,9 +37,11 @@ def print_header
 end
 
 def print(students)
-students.each_with_index do |student, index|
-  next if index == 0
+  students.each_with_index do |student, index|
+    next if index == 0
+  if student[:name].start_with?("T")
     puts "#{index}.#{student[:name]} (#{student[:cohort]} cohort)"
+  end
 end
 end
 
