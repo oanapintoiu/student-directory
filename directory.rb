@@ -17,6 +17,8 @@ def input_students
     puts "To finish, just hit return twice"
     # create an empty array
     students = []
+    
+    months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
     # get the first name
     name = gets.chomp
     # while the name is not empty, repeat this code
@@ -25,7 +27,15 @@ def input_students
       puts "What is their country of birth?"
       country = gets.chomp 
 
-      students << {name: name, cohort: :november, country: country}
+      puts "Please enter the cohort month: "
+      cohort = gets.chomp
+
+      while !months.include?(cohort) do
+          puts "Please enter a valid month:"
+          cohort = gets.chomp
+      end
+      cohort = "Unknown" if cohort.empty?
+      students << {name: name, cohort: cohort, country: country}
       puts "Now we have #{students.count} students"
       # get another name from the user
       name = gets.chomp
