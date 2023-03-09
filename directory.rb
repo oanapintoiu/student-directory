@@ -37,14 +37,17 @@ def print_header
 end
 
 def print(students)
-  students.each_with_index do |student, index|
-    next if index == 0
+  student_count = 0
+  until student_count == students.length
+  
   # if student[:name].start_with?("T")
-  if student[:name].length < 12
-    puts "#{index}.#{student[:name]} (#{student[:cohort]} cohort)"
-  end
+  # if student[:name].length < 12
+  puts "#{student_count + 1}. #{students[student_count][:name]} #{students[student_count][:cohort]} cohort"
+  student_count += 1  
 end
 end
+# end
+# end
 
 def print_footer(students)
     puts "Overall, we have #{students.count} great students."
