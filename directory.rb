@@ -1,15 +1,15 @@
 students = [
-{name: "Dr. Hannibal Lecter", cohort: :november},
-{name: "Darth Vader", cohort: :november},
-{name: "Nurse Ratched", cohort: :november},
-{name: "Michael Corleone", cohort: :november},
-{name: "Alex DeLarge", cohort: :november},
-{name: "The Wicked Witch of the West", cohort: :november},
-{name: "Terminator", cohort: :november},
-{name: "Freddy Krueger", cohort: :november},
-{name: "The Joker", cohort: :november},
-{name: "Joffrey Baratheon", cohort: :november},
-{name: "Norman Bates", cohort: :november},
+{name: "Dr. Hannibal Lecter", cohort: :november, quirk: "innapropriate diet"},
+{name: "Darth Vader", cohort: :november, quirk: "heavy breathing"},
+{name: "Nurse Ratched", cohort: :november, quirk: "growing darkness"},
+{name: "Michael Corleone", cohort: :november, quirk: "taking family too seriously"},
+{name: "Alex DeLarge", cohort: :november, quirk: "serious psycho"},
+{name: "The Wicked Witch of the West", cohort: :november, quirk: "annoying laughter"},
+{name: "Terminator", cohort: :november, quirk: "keeps coming back"},
+{name: "Freddy Krueger", cohort: :november, quirk: "has mommy and daddy issues"},
+{name: "The Joker", cohort: :november, quirk: "it's all about him"},
+{name: "Joffrey Baratheon", cohort: :november, quirk: "sadist"},
+{name: "Norman Bates", cohort: :november, quirk: "mommy issues with a side of rage"}
 ]
 
 def input_students
@@ -42,7 +42,7 @@ def print(students)
   
   # if student[:name].start_with?("T")
   # if student[:name].length < 12
-  puts "#{student_count + 1}. #{students[student_count][:name]} #{students[student_count][:cohort]} cohort"
+  puts "#{student_count + 1}. #{students[student_count][:name]} is part of the #{students[student_count][:cohort]} cohort and the following quirk: #{students[student_count][:quirk]}. "
   student_count += 1  
 end
 end
