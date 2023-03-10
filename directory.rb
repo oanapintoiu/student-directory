@@ -36,10 +36,10 @@ def input_students
       end
       cohort = "Unknown" if cohort.empty?
       students << {name: name, cohort: cohort, country: country}
-      puts "Now we have #{students.count} students"
+      students.length == 1 ? (puts "Now we have #{students.count} student.") : (puts "Now we have #{students.count} students.")
       # get another name from the user
       name = gets.chomp
-    end
+  end
     # return the array of students
     students
   end
@@ -56,7 +56,8 @@ def print(students)
   # if student[:name].start_with?("T")
   # if student[:name].length < 12
   puts "#{student_count + 1}. #{students[student_count][:name]}, born in #{students[student_count][:country]}, is part of the #{students[student_count][:cohort]} cohort".center(10)
-  student_count += 1  
+  student_count += 1 
+  
 end
 end
 # end
@@ -64,7 +65,7 @@ end
 
 def print_footer(students)
     puts "Overall, we have #{students.count} great students."
-end
+  end
 
 students = input_students
 print_header
