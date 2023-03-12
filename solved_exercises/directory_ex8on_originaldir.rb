@@ -1,3 +1,9 @@
+# 8. Once you complete the previous exercise, change the way the users are displayed: 
+# print them grouped by cohorts. 
+# To do this, you'll need to get a list of all existing cohorts 
+#   (the map() method may be useful but it's not the only option), 
+#   iterate over it and only print the students from that cohort.
+
 students = [
 {name: "Dr. Hannibal Lecter", cohort: :november},
 {name: "Darth Vader", cohort: :november},

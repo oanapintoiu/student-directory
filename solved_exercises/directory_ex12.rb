@@ -1,3 +1,8 @@
+# What happens if the user doesn't enter any students?
+# It will try to print an empty list. 
+# How can you use an if statement (Control Flow) to only print 
+# the list if there is at least one student in there?
+
 students = [
 {name: "Dr. Hannibal Lecter", cohort: :november},
 {name: "Darth Vader", cohort: :november},

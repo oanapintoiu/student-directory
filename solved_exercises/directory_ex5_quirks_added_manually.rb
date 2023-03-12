@@ -1,3 +1,6 @@
+# 5. Our code only works with the student name and cohort. Add more information: 
+# hobbies, country of birth, height, etc.
+
 students = [
 {name: "Dr. Hannibal Lecter", cohort: :november, quirk: "innapropriate diet"},
 {name: "Darth Vader", cohort: :november, quirk: "heavy breathing"},

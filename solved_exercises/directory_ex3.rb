@@ -1,3 +1,6 @@
+# 3. Modify your program to only print the students whose 
+# name is shorter than 12 characters.
+
 students = [
 {name: "Dr. Hannibal Lecter", cohort: :november},
 {name: "Darth Vader", cohort: :november},

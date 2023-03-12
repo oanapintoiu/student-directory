@@ -1,3 +1,6 @@
+# 2. Modify your program to only print the students 
+# whose name begins with a specific letter.
+
 students = [
 {name: "Dr. Hannibal Lecter", cohort: :november},
 {name: "Darth Vader", cohort: :november},

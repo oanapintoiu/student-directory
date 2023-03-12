@@ -1,4 +1,7 @@
-students = [
+# 5. Our code only works with the student name and cohort. Add more information: 
+# hobbies, country of birth, height, etc.
+
+tudents = [
 {name: "Dr. Hannibal Lecter", cohort: :november},
 {name: "Darth Vader", cohort: :november},
 {name: "Nurse Ratched", cohort: :november},

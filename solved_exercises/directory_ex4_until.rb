@@ -1,3 +1,6 @@
+# 4. Rewrite the each() method that prints all students using 
+# while or until control flow methods (Loops).
+
 students = [
 {name: "Dr. Hannibal Lecter", cohort: :november},
 {name: "Darth Vader", cohort: :november},
