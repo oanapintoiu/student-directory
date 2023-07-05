@@ -23,9 +23,9 @@ def process(selection)
   # do what the user has asked
   case selection
   when "1"
-   input_students # input students
+    input_students # input students
   when "2"
-   show_students # show the students
+    show_students # show the students
   when "3"
     save_students # save students
   when "4"
@@ -89,7 +89,7 @@ def load_students(filename = "students.csv")
   file = File.open(filename, "r")
   file.readlines.each do |line|
     name, cohort = line.chomp.split(',')
-    @students << {name: name, cohort: cohort.to_sym}
+    @students << { name: name, cohort: cohort.to_sym }
   end
   file.close
 end
@@ -97,6 +97,7 @@ end
 def try_load_students
   filename = ARGV.first # first argument from the command line
   return if filename.nil? # get out of the method if it isn't given
+
   if File.exist?(filename)
     load_students(filename)
     puts "Loaded #{@students.count} from #{filename}"
